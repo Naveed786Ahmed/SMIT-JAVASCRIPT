@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Facebook</title>
+    <link rel="shortcut icon" href="./images/facebook_logos.png" type="image/x-icon">
+    <!-- CSS LINK -->
+    <link rel="stylesheet" href="./pages/style.css">
+    <!--Font Awesome-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <div class="container">
+        <div class="create-post">
+            <div class="post-heading">
+                <h3>Create post</h3>
+                <div class="cancel">
+                    <i class="fa-solid fa-xmark"></i>
+                </div>
+            </div>
+
+            <div class="post-body">
+                <div class="profile">
+                    <div class="profile-box">
+                        <div class="profile-img">
+
+                        </div>
+                        <div class="profile-name">
+                            <div class="name">Naveed Ahmed</div>
+                            <div class="post-audiance">
+                                <select name="audiance" id="audiance">
+                                    <option value="Only me">Only me</option>
+                                    <option value="public">Public</option>
+                                    <option value="friends">Friends</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="post-content">
+                    <textarea name="post-text" id="posttext" cols="20" rows="5"
+                        placeholder="What's on your mind, Naveed?"></textarea>
+                </div>
+                <div class="styling">
+                    <div class="background-color">
+                        <li><input type="color" onchange="changeBackgroundColor()"></li>
+                        <li><img src="./images/b2.avif" onclick="changeBackground()" alt=""></li>
+                        <li><img src="./images/b3.avif" onclick="changeBackground()" alt=""></li>
+                        <li><img src="./images/b4.jpg" onclick="changeBackground()" alt=""></li>
+                        <li><img src="./images/b5.jpg" onclick="changeBackground()" alt=""></li>
+                        <li><img src="./images/b6.jpg" onclick="changeBackground()" alt=""></li>
+                    </div>
+                </div>
+                <div class="font-styling">
+                    <div class="font-color">
+                        <input type="color" onchange="changeFontColor()">
+                        <div class="font-list">
+                            <li onclick="changeFontWeight()">B</li>
+                            <li onclick="changeFontWeight()">I</li>
+                            <li onclick="changeFontWeight()">U</li>
+                            <li><select name="" id="" onchange="fontsize()">
+                                    <option value="16">16</option>
+                                    <option value="18">18</option>
+                                    <option value="20">20</option>
+                                    <option value="22">22</option>
+                                    <option value="24">24</option>
+                                    <option value="26">26</option>
+                                    <option value="28">28</option>
+                                    <option value="30">30</option>
+                                    <option value="32">32</option>
+                                    <option value="34">34</option>
+                                </select></li>
+                            <li onclick="changeFontWeight()"><i class="fa-solid fa-align-left"></i></li>
+                            <li onclick="changeFontWeight()"><i class="fa-solid fa-align-center"></i></li>
+                            <li onclick="changeFontWeight()"><i class="fa-solid fa-align-right"></i></li>
+                            <li class="emoji" onmouseover="activeEmoji()" onmouseout="activeEmoji()"><i
+                                    class="fa-regular fa-face-smile"></i>
+                                <div class="emojies">
+                                    <div class="emoj" onclick="postEmojies()">👍</div>
+                                    <div class="emoj" onclick="postEmojies()">❤️</div>
+                                    <div class="emoj" onclick="postEmojies()">😂</div>
+                                    <div class="emoj" onclick="postEmojies()">😯</div>
+                                    <div class="emoj" onclick="postEmojies()">😢</div>
+                                    <div class="emoj" onclick="postEmojies()">😡</div>
+                                </div>
+                            </li>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="post-btn">
+                    <div class="btn" onclick = "clickPost()">Post</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="./pages/app.js"></script>
+</body>
+
+</html>

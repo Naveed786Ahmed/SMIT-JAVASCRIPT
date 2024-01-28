@@ -1,0 +1,133 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Libre Baskerville', serif;
+}
+
+a {
+    text-decoration: none;
+    color: blueviolet;
+}
+
+.main-body {
+    width: 100%;
+    height: 100%;
+    background-color: blueviolet;
+}
+
+.header {
+    height: 15%;
+}
+
+.header-row {
+    height: 100%;
+    background-color: #000000;
+    padding: 12px;
+    box-shadow: rgba(138, 43, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+}
+
+.headers-col {
+    color: rgb(138, 43, 226);
+    font-size: 2.5vw;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+}
+
+.header-col {
+    color: blueviolet;
+    font-size: 2.5vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.header-cols {
+    color: blueviolet;
+    font-size: 2.5vw;
+    display: flex;
+    align-items: center;
+    justify-content: right;
+    cursor: pointer;
+}
+
+.main-contain {
+    height: auto;
+    margin-top: 2%;
+    padding: 20px;
+}
+
+.main-contain-col {
+    height: 380px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.assign {
+    width: 90%;
+    height: 90%;
+    border-radius: 5px;
+    box-shadow: rgba(138, 43, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: #4e1c7d;
+}
+
+.pic {
+    width: 90%;
+    height: 70%;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.pic img {
+    border-radius: 5px;
+}
+
+.but {
+    width: 90%;
+    height: 20%;
+    border-radius: 5px;
+    background-color: #000000;
+    font-size: 18px;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: blueviolet;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.but:active {
+    background-color: blueviolet;
+    color: #000000;
+}
+
+@media only screen and (max-width: 550px) {
+    .headers-col {
+        font-size: 14px;
+    }
+
+    .header-col {
+        font-size: 14px;
+    }
+
+    .header-cols {
+        font-size: 14px;
+    }
+
+    .main-contain-col {
+        height: 300px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}
